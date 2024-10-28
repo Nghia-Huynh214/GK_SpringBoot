@@ -1,4 +1,4 @@
-package com.example.GK_SpringBoot.category;
+package com.example.GK_SpringBoot.model;
 
 import jakarta.persistence.*;
 
@@ -18,7 +18,7 @@ public class Category {
     @Column(name = "created_at", updatable = true, insertable = true)
     private LocalDateTime createdAt;
 
-    @Column(name = "updated_at")
+    @Column(name = "updated_at", updatable = true, insertable = true)
     private LocalDateTime updatedAt;
 
     @PrePersist
@@ -32,6 +32,9 @@ public class Category {
 
         updatedAt = LocalDateTime.now();
     }
+
+
+
 
     public int getCategoryId() {
 

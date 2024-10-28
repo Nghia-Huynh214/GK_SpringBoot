@@ -1,6 +1,6 @@
 package com.example.GK_SpringBoot.controller;
 
-import com.example.GK_SpringBoot.category.Category;
+import com.example.GK_SpringBoot.model.Category;
 import com.example.GK_SpringBoot.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
